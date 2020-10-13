@@ -1,0 +1,733 @@
+><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+
+    <title>LDC</title>
+    <meta name="author" content="Jay Wheeler" />
+    <meta http-equiv="Content-Type" 
+          content="text/html; charset=iso-8859-1" />
+    <meta name="description" 
+	  content="lms utilities" />
+    <meta name="keywords" 
+	  content="open source software docker container image freeware ewsdocker earthwalk linux debian github git alpine" />
+
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/body.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/header.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/left-panel.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/content.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/title.css" >
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/holiday.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/construction.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/li.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/misc.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/footer.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/undecorated.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/block.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/color-schemes.css">
+    <LINK REL=StyleSheet TYPE="text/css" MEDIA=screen HREF="css/toc.css">
+
+  </head>
+  <body>
+
+    <!-- ------------------------ -->
+    <!--     The whole page       -->
+    <!-- ------------------------ -->
+
+    <div id="body" align="center">
+
+      <!-- ---------------- -->
+      <!--     Header       -->
+      <!-- ---------------- -->
+
+      <div id="header"
+           style="position:relative;height:162px;width:800px;background-image:url(images/header.gif);background-repeat:no-repeat;background-color: #cccccc;">
+        <div id="headerCompany" align="left"><span class="githubBlue">EarthWalk Software</span></div>
+        <div id="headerCompanySm" align="left"><span class="githubBlue">and Consulting</span></div>
+
+        <div id="headerDocker" align="left" class="blue">
+          <a href="https://github.com/ewsdocker/ewsdocker.github.io/wiki">ewsdocker</a>
+        </div>
+        <div id="headerDockerOSS" align="left"><span class="blue">Open Source Docker Containers</span></div>
+        <!-- <div id="headerDockerLDC" align="left"><span class="blue">Linux Docker Containers</span></div> -->
+        <div id="headerMenu" align="right"><a 
+	         href="https://hub.docker.com/r/ewsdocker/ldc-framework">Docker Image</a> | <a 
+             href="https://github.com/ewsdocker/ldc-framework">Git Source</a> | <a 
+             href="https://github.com/ewsdocker/ldc-framework/wiki">Wiki</a>
+        </div>
+
+      </div>
+    <!-- --------------- -->
+    <!--    EndHeader    -->
+    <!-- --------------- -->
+
+    <br />
+
+    <!-- ---------------- -->
+    <!--     Content      -->
+    <!-- ---------------- -->
+      <div id="content">
+
+      <!-- ------------------- -->
+      <!--    Left Panel       -->
+      <!-- ------------------- -->
+        <div id="leftpanel">
+
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+        <!--     ldc-framework    -->
+        <!-- --------------------- -->
+          <div class="leftMenuTop"
+               style="width:204px;height:27px;background-image:url(images/table_top.jpg);background-repeat:no-repeat;">
+            <span class="leftMenuPanel darkBlue"><a class="darkBlue"
+                  href="https://github.com/ewsdocker/ldc-framework/wiki">Framework</a></span>
+          </div>
+
+          <div class="leftMenuContent"
+               style="width:204px;background-image:url(images/table_content.jpg);background-repeat:repeat-y;">
+            <div class="leftMenuText darkBlue">
+              <br />
+                <a class="darkBlue" href="../../ldc-framework/docs/ldc-core.html">Core</a><br />
+                <a class="darkBlue" href="../../ldc-framework/docs/ldc-library.html">Library</a><br />
+                <a class="darkBlue" href="../../ldc-framework/docs/ldc-base.html">Base</a><br />
+                <a class="darkBlue" href="../../ldc-framework/docs/ldc-stack.html">Stack</a><br />
+                <a class="darkBlue" href="../../ldc-framework/docs/ldc-stack-dev.html">Stack Dev</a><br />
+                <a class="darkBlue" href="../../ldc-framework/docs/ldc-stack-apps.html">Stack Apps</a><br />
+                <a class="darkBlue" href="../../ldc-framework/docs/ldc-dialog.html">Dialog</a><br />
+                <a class="darkBlue" href="../../ldc-framework/docs/ldc-ck-library.html">CK Library</a><br />
+                <a class="darkBlue" href="../../ldc-framework/docs/ldc-ckaptain.html">CKaptain</a>
+            </div>
+          </div>
+
+          <div class="leftMenuBottom darkBlue">
+            <img src="images/table_bottom.jpg" width="204" height="23" border="0" alt="" />
+          </div> 
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+
+              <br />
+
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+        <!--     ldc-applications  -->
+        <!-- --------------------- -->
+          <div class="leftMenuTop"
+               style="width:204px;height:27px;background-image:url(images/table_top.jpg);background-repeat:no-repeat;">
+            <span class="leftMenuPanel darkBlue"><a class="darkBlue"
+                  href="https://github.com/ewsdocker/ldc-framework/wiki">Applications</a></span>
+          </div>
+
+          <div class="leftMenuContent"
+               style="width:204px;background-image:url(images/table_content.jpg);background-repeat:repeat-y;">
+            <div class="leftMenuText darkBlue">
+              <br />
+                <a class="darkBlue" href="../../ldc-applications/docs/ldc-browser.html">Browser</a><br />
+                <a class="darkBlue" href="../../ldc-applications/docs/ldc-console.html">Console</a><br />
+                <a class="darkBlue" href="../../ldc-applications/docs/ldc-desktop.html">Desktop</a><br />
+                <a class="darkBlue" href="../../ldc-applications/docs/ldc-eclipse.html">Eclipse</a><br />
+                <a class="darkBlue" href="../../ldc-applications/docs/ldc-games.html">Games</a><br />
+                <a class="darkBlue" href="../../ldc-applications/docs/ldc-libre.html">Libre Office</a><br />
+            </div>
+          </div>
+
+          <div class="leftMenuBottom darkBlue">
+            <img src="images/table_bottom.jpg" width="204" height="23" border="0" alt="" />
+          </div> 
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+
+              <br />
+
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+        <!--        -->
+        <!-- --------------------- -->
+          <div class="leftMenuTop"
+               style="width:204px;height:27px;background-image:url(images/table_top.jpg);background-repeat:no-repeat;">
+            <span class="leftMenuPanel darkBlue"><a class="darkBlue"
+                  href="https://github.com/ewsdocker/ldc-development/wiki">Development</a></span>
+          </div>
+
+          <div class="leftMenuContent"
+               style="width:204px;background-image:url(images/table_content.jpg);background-repeat:repeat-y;">
+            <div class="leftMenuText darkBlue">
+              <br />
+                <a class="darkBlue" href="../../ldc-development/docs/ldc-rust-stack.html">Rust Stack</a><br />
+                <a class="darkBlue" href="../../ldc-development/docs/ldc-rustc.html">RustC</a><br />
+                <a class="darkBlue" href="../../ldc-development/docs/ldc-wine.html">Wine</a><br />
+           </div>
+          </div>
+
+          <div class="leftMenuBottom darkBlue">
+            <img src="images/table_bottom.jpg" width="204" height="23" border="0" alt="" />
+          </div> 
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+
+              <br />
+
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+        <!--        -->
+        <!-- --------------------- -->
+          <div class="leftMenuTop"
+               style="width:204px;height:27px;background-image:url(images/table_top.jpg);background-repeat:no-repeat;">
+            <span class="leftMenuPanel darkBlue"><a class="darkBlue"
+                  href="https://github.com/ewsdocker/ldc-packagers/wiki">Packagers</a></span>
+          </div>
+
+          <div class="leftMenuContent"
+               style="width:204px;background-image:url(images/table_content.jpg);background-repeat:repeat-y;">
+            <div class="leftMenuText darkBlue">
+              <br />
+                <a class="darkBlue" href="../../ldc-packagers/docs/ldc-netsurf.html">NetSurf</a> (experimental)<br />
+           </div>
+          </div>
+
+          <div class="leftMenuBottom darkBlue">
+            <img src="images/table_bottom.jpg" width="204" height="23" border="0" alt="" />
+          </div> 
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+
+              <br />
+
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+        <!--        -->
+        <!-- --------------------- -->
+          <div class="leftMenuTop"
+               style="width:204px;height:27px;background-image:url(images/table_top.jpg);background-repeat:no-repeat;">
+            <span class="leftMenuPanel darkBlue"><a class="darkBlue"
+                  href="https://github.com/ewsdocker/ldc-manage/wiki">Manage</a></span>
+          </div>
+
+          <div class="leftMenuContent"
+               style="width:204px;background-image:url(images/table_content.jpg);background-repeat:repeat-y;">
+            <div class="leftMenuText darkBlue">
+              <br />
+<!--
+                <a class="darkBlue" href="../../ldc-development/docs/ldc-rust-stack.html">Rust Stack</a><br />
+-->
+           </div>
+          </div>
+
+          <div class="leftMenuBottom darkBlue">
+            <img src="images/table_bottom.jpg" width="204" height="23" border="0" alt="" />
+          </div> 
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+
+              <br />
+
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+        <!-- Additional Resources  -->
+        <!-- --------------------- -->
+          <div class="leftMenuTop"
+               style="width:204px;height:27px;background-image:url(images/table_top.jpg);background-repeat:no-repeat;">
+            <span class="leftMenuPanel darkBlue">Resources</span>
+          </div>
+
+          <div class="leftMenuContent darkBlue"
+               style="width:204px;background-image:url(images/table_content.jpg);background-repeat:repeat-y;">
+            <div class="leftMenuText">
+              <br />
+              <a class="darkBlue" href="https://hub.docker.com/r/ewsdocker/ldc-framework">Docker Image</a><br />
+              <a class="darkBlue" href="https://github.com/ewsdocker/ldc-framework">GitHub Source</a><br />
+            </div>
+          </div>
+
+          <div class="leftMenuBottom darkBlue">
+            <img src="images/table_bottom.jpg" width="204" height="23" border="0" alt="" />
+          </div> 
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+
+          <br />
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+        <!--     Licenses          -->
+        <!-- --------------------- -->
+          <div class="leftMenuTop"
+               style="width:204px;height:27px;background-image:url(images/table_top.jpg);background-repeat:no-repeat;">
+            <span class="leftMenuPanel darkBlue">Licenses</span>
+          </div>
+
+          <div class="leftMenuContent"
+               style="width:204px;background-image:url(images/table_content.jpg);background-repeat:repeat-y;">
+            <div class="leftMenuText darkBlue">
+              <br />
+              <a class="darkBlue" href="License.html">ldc</a><br />
+            </div>
+          </div>
+
+          <div class="leftMenuBottom darkBlue">
+            <img src="images/table_bottom.jpg" width="204" height="23" border="0" alt="" />
+          </div> 
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+
+          <br />
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+        <!--     Repositories       -->
+        <!-- --------------------- -->
+          <div class="leftMenuTop"
+               style="width:204px;height:27px;background-image:url(images/table_top.jpg);background-repeat:no-repeat;">
+            <span class="leftMenuPanel darkBlue">Repositories</span>
+          </div>
+
+          <div class="leftMenuContent"
+               style="width:204px;background-image:url(images/table_content.jpg);background-repeat:repeat-y;">
+            <div class="leftMenuText darkBlue">
+              <br />
+              <a class="darkBlue" href="https://hub.docker.com/r/ewsdocker/">Docker Hub</a><br />
+              <a class="darkBlue" href="https://github.com/ewsdocker?tab=repositories">GitHub</a><br />
+              <a class="darkBlue" href="https://github.com/ewsdocker/ewsdocker.github.io/wiki">ewsdocker Wiki</a><br />
+            </div>
+          </div>
+
+          <div class="leftMenuBottom darkBlue">
+            <img src="images/table_bottom.jpg" width="204" height="23" border="0" alt="" />
+          </div> 
+        <!-- --------------------- -->
+        <!--    Left Panel Menu    -->
+        <!-- --------------------- -->
+
+          <br />
+
+          <p>
+            &nbsp;
+          </p>
+        </div>
+        <!-- ---------------- -->
+        <!--    Left Panel    -->
+        <!-- ---------------- -->
+
+      <!-- -------------------- -->
+      <!--    contentText       -->
+      <!-- -------------------- -->
+      <div id="contentText">
+
+        <span class="title darkBlue">LDC</span>
+        <br />
+        <span class="subtitle darkBlue">Linux Docker Containers</span>
+        <br />
+        <span class="subtitle gray">Hosted by <a href="http://github.com">GitHub</a></span><br />
+        <br />
+
+        <!-- ---------------- -->
+        <!--  construction    -->
+        <!-- ---------------- -->
+          <div id="construction">
+            <div class=".construction"><img src="images/construction.gif" style="width:144px;height:50px;" /></div>
+            <span class="red">Under Construction</span>
+	      </div>
+        <!-- ---------------- -->
+        <!--  construction    -->
+        <!-- ---------------- -->
+
+        <!-- ------------- -->
+        <!--    bodyText   -->
+        <!-- ------------- -->
+          <div class="gray body" style="text-align:justify;">
+
+            <div class="darkBlue border block undecorated" id="blockLeft" 
+                 style="font-size:18px;font-weight:normal;text-decoration:none;background-color:#FFFFFF;">
+              <div class="darkBlue" id="blockCentered"
+                style="font-size:16px;font-weight:normal;text-decoration:none;background-color:#FFFFFF;">
+                 <span style="font-weight:bold;font-size:22px;">ldc</span>
+                 <p /> 
+                 Latest Version
+                 <br /> 
+                 <span style="font-weight:bold;text-decoration:none;">
+                   0.1.0-b3
+                 </span>
+                 <br />
+                <span style="font-weight:bold;font-size:12px;">September 29, 2020</span>.
+                <p />
+                <p />
+                <a name="relinfo"><b><u>Release Information</u></b></a>  
+              </div>
+
+              <div class="darkBlue" id="blockLeft"
+                style="font-size:16px;font-weight:normal;text-decoration:none;background-color:#FFFFFF;">
+                <ul>
+                  <b>ldc</b> is in pre-release as version <i>0.1.0</i> during transition 
+                  from independent projects to a more coherent, single project to support 
+                  fast creation of <b>Docker</b> container applications based on 
+                  the <a href="https://github.com/ewsdocker/ldc-framework"><b>LDC Framework</b></a> 
+                  project.
+                  <br />
+
+                </ul>
+              </div>
+            </div>
+
+            <p />
+
+            <!-- --------------------- -->
+            <!--      block            -->
+            <!-- --------------------- -->
+            <div class="darkBlue block undecorated" id="blockLeft"
+                 style="color:blue;font-size:18px;font-weight:normal;text-decoration:none;">
+
+              <div class="darkBlue" id="blockLeft"
+                   style="color:blue;font-size:20px;font-weight:bold;text-decoration:underline;">
+                Framework
+              </div>
+
+              <div class="darkBlue block undecorated" id="blockLeft" 
+                   style="font-size:16px;font-weight:normal;text-decoration:none;background-color:#FFFFFF;">
+                The primary goal of the <b>LDC Framework</b> project is to 
+                streamline <i>Docker</i> container development by providing:
+
+                <ul>
+                  <li>
+                    a container structure which lends itself to replication within 
+                    each created container, including those used as a base 
+                    for a new container;
+                  </li>
+                  <li>
+                    a directory structure allowing for utility libraries and 
+                    scripts, a standard, expandable <i>Docker</i>-host interface, 
+                    and well defined internal structure for consistent behavior 
+                    of system daemons and developed applications;
+                  </li>
+                  <li>
+                    simple dialog boxes and form-based complex dialog boxes 
+                    for use in scripts and console-based applications.
+                  </li>
+                 </ul>
+               </div>
+
+	          <p style="text-align: center;"><img 
+                 src="images/blue.gif" /></p>
+
+              <div class="darkBlue" id="blockLeft"
+                   style="color:blue;font-size:20px;font-weight:bold;text-decoration:underline;">
+                Applications
+              </div>
+
+              <div class="darkBlue block undecorated" id="blockLeft" 
+                   style="font-size:16px;font-weight:normal;text-decoration:none;background-color:#FFFFFF;">
+
+                The <b>LDC Applications</b> project containers are built directly from 
+                a Framework stack.
+                <br />
+                <br />
+                There are currently 6 sub-projects, providing an array of applications:
+
+                <dl>
+                  <dt><b>browser - web browsers</b></dt>
+                    <dd>
+                      <li>
+                        <i>Firefox</i>, including Firefox-esr and Firefox Quantum
+                      </li>
+                      <li>
+                        <i>NetSurf</i>
+                      </li>
+                      <li>
+                        <i>PaleMoon</i>
+                      </li>
+                      <li>
+                        <i>Waterfox</i>, including Waterfox Classic and 
+                        Waterfox Current
+                      </li>
+                    </dd>
+
+                  <br />
+
+                  <dt><b>console - terminal applications</b></dt>
+                    <dd>
+                      <li>
+                        <i>Nano</i> editor
+                      </li>
+                      <li>
+                        <i>Tumblr</i> gallery downloader
+                      </li>
+                    </dd>
+
+                  <br />
+
+                  <dt><b>desktop</b> - GUI applications</dt>
+                    <dd>
+                      <li>
+                        <i>dia</i> graphic editor
+                      </li>
+                      <li>
+                        <i>gimp</i> graphic editor
+                      </li>
+                      <li>
+                        <i>mousepad</i>
+                      </li>
+                      <li>
+                        <i>ripme</i> - Java-based gallery ripper.
+                      </li>
+                      <li>
+                        <i>ShotCut</i> - Multimedia editor.
+                      </li>
+                    </dd>
+
+                  <br />
+
+                  <dt><b>eclipse</b> - Eclipse IDEs</dt>
+                    <dd>
+                      <li>
+                        <i>cdt</i>
+                        <ul>
+                          <li><i>fortran</i> - Fortran 8 run-time and compiler</li>
+                          <li><i>qt</i> - Qt 4 run-time and compiler</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <i>java</i>
+                      </li>
+                      <li>
+                        <i>javascript</i>
+                        <ul>
+                          <li><i>bash</i> - Bash editor and debugger</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <i>pdt</i> - Php development and 5.6 engine
+                      </li>
+                      <li>
+                        <i>rust</i>
+                      </li>
+                    </dd>
+
+                  <br />
+
+                  <dt><b>games</b> - GUI games</dt>
+                    <dd>
+                      <li>
+                        <i>mahjongg</i>
+                      </li>
+                      <li>
+                        <i>sol</i>
+                     </li>
+                    </dd>
+
+                  <br />
+
+                  <dt><b>libre</b> - Libre Office implementations</dt>
+                    <dd>
+                      <li>
+                        <i>office</i> - GTK3 version, no Java
+                      </li>
+                      <li>
+                        <i>office-jdk</i> - GTK3 plus Java
+                     </li>
+                    </dd>
+
+                </dl>
+
+               </div>
+
+	          <p style="text-align: center;"><img 
+                 src="images/blue.gif" /></p>
+
+              <div class="darkBlue" id="blockLeft"
+                   style="color:blue;font-size:20px;font-weight:bold;text-decoration:underline;">
+                Development
+              </div>
+
+              <div class="darkBlue block undecorated" id="blockLeft" 
+                   style="font-size:16px;font-weight:normal;text-decoration:none;background-color:#FFFFFF;">
+
+               <p>
+                The <b>LDC Development</b> project contains sub-projects being developed for inclusion in the
+                <b>LDC Applications</b> project in future release(s).  It provides a way to include the 
+                <b>LDC Framework</b> stacks in a low priority development project.
+               </p>
+
+               <p>
+                <b>NOTE:</b> The projects in <b>LDC Development</b> are development snapshots with no delta
+                time (cannot project the next development effort for the project).
+               </p>
+
+                <dl>
+                  <dt><b>rust-stack</b></dt>
+                    <dd>
+                      Base stack to derive rustc applications from.
+                    </dd>
+
+                  <br />
+
+                  <dt><b>rustc</b></dt>
+                    <dd>
+                      Rust Compiler and run-time libraries.
+                    </dd>
+
+                  <br />
+
+                  <dt><b>wine</b></dt>
+                    <dd>
+                      Microsoft applications on Linux.
+                    </dd>
+
+                  <br />
+
+                 </dl>
+               </div>
+
+	          <p style="text-align: center;"><img 
+                 src="images/blue.gif" /></p>
+
+              <div class="darkBlue" id="blockLeft"
+                   style="color:blue;font-size:20px;font-weight:bold;text-decoration:underline;">
+                Packagers
+              </div>
+
+              <div class="darkBlue block undecorated" id="blockLeft" 
+                   style="font-size:16px;font-weight:normal;text-decoration:none;background-color:#FFFFFF;">
+
+               <p>
+                The <b>LDC Packagers</b> project contains sub-projects to create 
+                special packagers for selected external projects.
+               </p>
+
+                <dl>
+                  <dt><b>netsurf-packager</b></dt>
+                    <dd>
+                      Special bash packager to bundle <i>NetSurf</i> source for installation
+                      into <b>LDC Applications</b> <i>NetSurf</i> container 
+                      creation.
+                    </dd>
+
+                  <br />
+
+                 </dl>
+               </div>
+
+	          <p style="text-align: center;"><img 
+                 src="images/blue.gif" /></p>
+
+              <div class="darkBlue" id="blockLeft"
+                   style="color:blue;font-size:20px;font-weight:bold;text-decoration:underline;">
+                Manage
+              </div>
+
+              <div class="darkBlue block undecorated" id="blockLeft" 
+                   style="font-size:16px;font-weight:normal;text-decoration:none;background-color:#FFFFFF;">
+
+               <p>
+                The <b>LDC Manage</b> project contains sub-projects intended for use
+                in managing the <b>LDC</b> projects in a uniform way.
+               </p>
+
+                <dl>
+                  <dt><b>lms-bash</b></dt>
+                    <dd>
+                      The ewsdocker/lms-bash scripts moved to <i>Manage</i> to finally make a
+                      uniform library for <b>LDC Manage</b> projects and <b>LDC Framework</b> 
+                      projects while still providing the library to the <i>docker host</i>.
+                    </dd>
+
+                  <br />
+
+                 </dl>
+               </div>
+
+             </div>
+
+             <!-- --------------------- -->
+             <!--      block            -->
+             <!-- --------------------- -->
+
+	         <p style="text-align: center;"><img src="images/Colorbar-560.gif" /></p>
+
+             <!-- --------------------- -->
+             <!--      block            -->
+             <!-- --------------------- -->
+             <div class="red border block">
+               <div id="blockCentered">
+ 	             <span style="font-size:20px; font-weight:bold;">NOTE</span> &nbsp; 
+                 &nbsp;&nbsp;&nbsp;&nbsp;
+	           </div>
+
+	           <p class="darkBlue">
+                 All <b>Docker</b> containers in <b>ldc</b>, 
+                 <b>ldc-framework</b>, <b>ldc-applications</b> and 
+            	 <b>ldc-development</b> are designed to be used 
+                 on a Linux system configured to support <b>Docker</b> 
+                 <i>user namespace</i>s, or <i>userns</i>.
+               </p>
+               <p class="darkBlue">
+             	 Refer to 
+            	 <a href="https://github.com/ewsdocker/ewsdocker.github.io/wiki/UserNS-Overview">
+            	 ewsdocker Containers and Docker User Namespaces</a> for an overview and 
+             	 additional information.
+	           </p>
+
+	         </div>
+
+           </div>
+           <!-- --------------------- -->
+           <!--      block            -->
+           <!-- --------------------- -->
+
+	       <p style="text-align: center;"><img src="images/Colorbar-560.gif" /></p>
+		   <br />
+
+         </div>
+         <!-- ------------- -->
+         <!--    bodyText   -->
+         <!-- ------------- -->
+
+	     <p>&nbsp;</p>
+
+       </div>
+       <!-- ----------------- -->
+       <!--    contentText    -->
+       <!-- ----------------- -->
+
+        <br />
+        <br />
+
+      <!-- ------------ -->
+      <!--    Footer    -->
+      <!-- ------------ -->
+        <div class="footer"
+             style="width: 779px;height: 32px;background-image:url(images/bg_footer.gif);background-repeat:no-repeat;">
+          <div class="footerblock">
+            <a href="https://hub.docker.com/r/ewsdocker/ldc">Docker Image</a> | <a 
+               href="https://github.com/ewsdocker/ldc">Git Source</a> | <a 
+               href="https://github.com/ewsdocker/ldc/wiki">Wiki</a>
+            <br />
+            <div class="footerCopyright">Copyright � 2018-2020. EarthWalk Software. Modified 2020-10-11.</div>
+          </div>
+        </div> 
+      <!-- ------------ -->
+      <!--    Footer    -->
+      <!-- ------------ -->
+
+      </div>
+      <!-- ------------- -->
+      <!--    content    -->
+      <!-- ------------- -->
+
+    </div>
+  <!-- ------------------------ -->
+  <!--     The whole page       -->
+  <!-- ------------------------ -->
+
+  </body>
+
+</html>

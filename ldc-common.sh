@@ -4,13 +4,13 @@
 # ==========================================
 
 declare ldcalpine="3.12"
-declare ldcdebian="10.7"
+declare ldcdebian="10.8"
 
 # ==========================================
 
 declare ldcbasev="0.1.0"
 declare ldcvers="-${ldcbasev}"
-declare ldcextv="-b4"
+declare ldcextv="-b5"
 
 declare ldccont="${ldcvers}"
 
